@@ -1,7 +1,121 @@
 * {
   box-sizing: border-box;
+  font-family: Ubuntu, "times new roman", times, roman, serif;
 }
-header {
+
+@font-face {
+  font-family: Bebas;
+  src: url('./Bebas-Regular.ttf');
+}
+
+a {
+  color: #313131;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+button {
   background-color: #ff6200;
-  height: 20px;
+  border: none;
+  font-size: 12pt;
 }
+
+header {
+  position: fixed; 
+  top: 0px; 
+  left: 0px; 
+  right: 0px; 
+  height: 50px;
+}
+
+.header-grey-bar {
+  background-color: #f9f9f9;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header-top-bar {
+  width: 100%;
+  background-color: #ff6200;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  letter-spacing: -.1px;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 36pt;
+}
+
+.black {
+  color: #313131;
+}
+
+.lt-orange {
+  color: #ff6200;
+}
+
+.orange {
+  color: #be3600;
+}
+
+.white {
+  color: white;
+}
+
+.bebas {
+  font-family: "Bebas";
+}
+
+.opensans {
+  font-family: "Open Sans";
+}
+
+.ubuntu {
+  font-family: Ubuntu;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  text-transform: uppercase;
+  display: inline;
+  padding: 10px;
+}
+
+li:hover {
+    font-weight: 800;
+    border-bottom: 4px solid #ff6200;
+    cursor: pointer;
+  }
+
+  ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+  }
+  
+  ul li:hover > ul,
+  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+  
+  ul li ul li {
+    clear: both;
+    width: 100%;
+  }
