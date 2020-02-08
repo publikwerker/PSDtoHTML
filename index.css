@@ -22,6 +22,11 @@ button {
   font-size: 12pt;
 }
 
+.dropdown {
+  position: relative;
+  border: 1px solid #313131;
+}
+
 header {
   position: fixed; 
   top: 0px; 
