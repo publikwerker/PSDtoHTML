@@ -1,0 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: #ff6200;
+  height: 20px;
+}
